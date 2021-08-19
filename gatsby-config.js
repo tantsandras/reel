@@ -19,5 +19,12 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-source-podcast-rss-feed`,
+      options: {
+        feedURL: `https://feeds.soundcloud.com/users/soundcloud:users:884239870/sounds.rss`,
+        id: "guid",
+      },
+    },
   ],
 };
