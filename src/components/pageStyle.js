@@ -3,10 +3,13 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  line-height: 1;
   padding-bottom: 200px;
 `;
 

@@ -5,6 +5,8 @@ import { graphql } from "gatsby";
 import EpisodeList from "../components/episodeList";
 import EpisodeCard from "../components/episodeCard";
 import PageStyle from "../components/pageStyle";
+import Social from "../components/social";
+
 // styles
 const pageStyles = {
   color: "#232129",
@@ -48,6 +50,7 @@ const IndexPage = ({ data }) => {
       />
       <Heading>Reel Feminism</Heading>
       <PageStyle>
+        <Social />
         <EpisodeList>
           {renderEpisodes(data.allPodcastRssFeedEpisode.nodes)}
         </EpisodeList>

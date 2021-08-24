@@ -39,7 +39,7 @@ const Description = styled.p`
   text-align: left;
   font-size: 1rem;
   color: black;
-  font-family: Roboto;
+  font-family: "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif";
   margin-bottom: 0px;
 `;
 

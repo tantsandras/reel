@@ -4,6 +4,8 @@ import EpisodeCard from "./episodeCard";
 const listStyle = {
   display: `grid`,
   alignItems: `center`,
+  width: `100%`,
+  height: `auto`,
   gridTemplateColumns: `repeat(auto-fit, minmax(300px, 1fr))`,
   gap: `3%`,
   listStyle: "none",
@@ -13,7 +15,7 @@ const listStyle = {
 };
 
 const listItem = {
-  gridTemplateColumns: `repeat(4, 1fr)`,
+  gridTemplateColumns: `repeat(6, 1fr)`,
   gridTemplateRows: `repeat(2, 300px)`,
 };
 
