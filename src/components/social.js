@@ -10,11 +10,12 @@ const SocialBox = styled.div`
   text-align: right;
   width: 100%;
   height: 40px;
+  padding-top: 10px;
   color: black;
   font-family: Knewave;
   font-size: 20px;
   vertical-align: middle;
-  text-tranform: uppercase;
+  text-transform: uppercase;
 `;
 
 const Facebook = styled(FacebookWithCircle)`

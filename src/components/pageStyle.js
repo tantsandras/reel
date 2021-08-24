@@ -7,6 +7,7 @@ const Container = styled.div`
   padding: 0;
   border: 0;
   font-size: 100%;
+  width: 100%;
   font: inherit;
   vertical-align: baseline;
   line-height: 1;
