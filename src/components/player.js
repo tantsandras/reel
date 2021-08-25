@@ -14,6 +14,7 @@ const Player = ({ title, link, number }) => {
       <iframe
         width="100%"
         height="20"
+        title={title}
         scrolling="no"
         frameborder="no"
         allow="autoplay"
@@ -38,6 +39,7 @@ const Player = ({ title, link, number }) => {
           href={link}
           title={title}
           target="_blank"
+          rel="noreferrer"
           style={{
             color: "#cccccc",
             textDecoration: "none",

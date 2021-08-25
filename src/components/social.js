@@ -29,13 +29,14 @@ const Facebook = styled(FacebookWithCircle)`
 const Insta = styled(InstagramWithCircle)`
   color: #fb0cab;
   padding-bottom: 5px;
-  margin-right: 2rem;
+  padding-right: 2px;
+  margin-right: 2.6rem;
 `;
 
 const Social = () => {
   return (
     <SocialBox>
-      Follow us
+      Follow us:
       <a
         href="https://www.facebook.com/ReelFeminism/"
         target="_blank"

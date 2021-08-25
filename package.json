@@ -32,6 +32,7 @@
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.0",
     "styled-icons": "^10.37.0",
+    "typeface-inter": "^3.18.1",
     "typeface-knewave": "^1.1.13"
   }
 }

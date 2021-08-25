@@ -38,7 +38,7 @@ const imageStyle = {
 
 const listItem = {
   height: `auto`,
-  padding: `1rem`,
+  padding: `1.6rem`,
 };
 
 // markup
@@ -65,7 +65,7 @@ const IndexPage = ({ data }) => {
   );
   function renderEpisodes(episode) {
     return episode.map((ep) => {
-      const { image, duration, summary } = ep.item.itunes;
+      const { image, summary } = ep.item.itunes;
       const { guid, title, link } = ep.item;
       return (
         <li style={listItem}>
@@ -92,7 +92,6 @@ export const PodcastQuery = graphql`
         item {
           itunes {
             image
-            duration
             summary
           }
           guid

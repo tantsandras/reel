@@ -1,12 +1,13 @@
 import * as React from "react";
 import styled from "styled-components";
 import Player from "./player";
+import Description from "./description";
 
 const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-bottom: 80px;
+  margin-bottom: 2.6rem;
   position: relative;
   min-width: 280px;
   max-width: 280px;
@@ -29,18 +30,6 @@ const Title = styled.h4`
 const Img = styled.img`
   width: 280px;
   height: 280px;
-`;
-
-const Description = styled.p`
-  padding-left: 1rem;
-  padding-right: 1rem;
-  height: auto;
-  padding-bottom: 2rem;
-  text-align: left;
-  font-size: 1rem;
-  color: black;
-  font-family: "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif";
-  margin-bottom: 0px;
 `;
 
 const EpisodeCard = ({ guid, title, link, image, summary }) => {
