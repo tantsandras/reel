@@ -36,21 +36,27 @@ const imageStyle = {
   zIndex: -2,
 };
 
+const listItem = {
+  height: `auto`,
+  padding: `1rem`,
+};
+
 // markup
 const IndexPage = ({ data }) => {
   return (
     <main>
       <title>Home Page</title>
       <StaticImage
-        src="../images/Untitled design(7).png"
+        src="../images/Untitled design(8).png"
         alt="Yellow and pink stripes"
         placeholder="blurred"
         layout="fullWidth"
         style={imageStyle}
       />
+
       <Heading>Reel Feminism</Heading>
+      <Social />
       <PageStyle>
-        <Social />
         <EpisodeList>
           {renderEpisodes(data.allPodcastRssFeedEpisode.nodes)}
         </EpisodeList>
@@ -62,14 +68,16 @@ const IndexPage = ({ data }) => {
       const { image, duration, summary } = ep.item.itunes;
       const { guid, title, link } = ep.item;
       return (
-        <EpisodeCard
-          key={title}
-          title={title}
-          guid={guid}
-          link={link}
-          image={image}
-          summary={summary}
-        />
+        <li style={listItem}>
+          <EpisodeCard
+            key={title}
+            title={title}
+            guid={guid}
+            link={link}
+            image={image}
+            summary={summary}
+          />
+        </li>
       );
     });
   }

@@ -8,8 +8,8 @@ const Card = styled.div`
   justify-content: space-evenly;
   margin-bottom: 80px;
   position: relative;
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 280px;
+  max-width: 280px;
   height: auto !important;
   align-items: center;
   justify-content: center;
@@ -27,8 +27,8 @@ const Title = styled.h4`
 `;
 
 const Img = styled.img`
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
 `;
 
 const Description = styled.p`
@@ -46,6 +46,7 @@ const Description = styled.p`
 const EpisodeCard = ({ guid, title, link, image, summary }) => {
   const trackNumber = guid.split("tag:soundcloud,2010:tracks/");
   const cutTitle = title.split("-");
+  const cutSummary = summary.split("Get involved");
   return (
     <Card>
       <Img src={image} alt="Episode art" />
@@ -55,7 +56,7 @@ const EpisodeCard = ({ guid, title, link, image, summary }) => {
         {cutTitle[1]}
       </Title>
       <Player title={title} link={link} number={trackNumber[1]} />
-      <Description>{summary}</Description>
+      <Description>{cutSummary[0]}</Description>
     </Card>
   );
 };
